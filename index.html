@@ -1,11 +1,445 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | UCompensar</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home | UCompensar</title>
+
+        <!--Css y Bootstrap-->
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <!--Navbar-->
+
+      <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-custom">
+        <div class="container-fluid">
+          <!-- Logo alineado a la izquierda -->
+          <a class="navbar-brand ms-2" href="#">
+            <img src="/imagenes/main-logo.svg" alt="Logo" class="img-fluid logo-responsive">
+          </a>
+  
+          <!-- Botón de colapso en pantallas pequeñas -->
+          <button class="navbar-toggler ms-auto order-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Botón de salida (X) solo visible cuando el menú está colapsado -->
+          <button class="navbar-close d-none" type="button" aria-label="Cerrar navegación">
+            <span>&times;</span>
+          </button>
+
+          <!--Boton de busqueda-->
+          <form class="d-flex order-0 order-lg-2">
+            <button class="btn btn-orange search-small" type="submit">
+              <i class="bi bi-search"></i>
+            </button>
+          </form>
+  
+          <!-- Contenido del navbar -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">La institucion</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Estudios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Nuevo Campus</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">SENA</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Finanzas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">EdTech</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" aria-expanded="false">
+                  Servicios
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Graduados</a></li>
+                  <li><a class="dropdown-item" href="#">Estudiantes</a></li>
+                  <li><a class="dropdown-item" href="#">Estado de Admisión</a></li>
+                  <li><a class="dropdown-item" href="#">Reingresos</a></li>
+                  <li><a class="dropdown-item" href="#">Pago en Línea</a></li>
+                  <li><a class="dropdown-item" href="#">Aplicativos</a></li>
+                  <li><a class="dropdown-item" href="#">Emisora</a></li>
+                  <li><a class="dropdown-item" href="#">Blog</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!--Carrusel-->
+
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="6" aria-label="Slide 7"></button>
+          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="7" aria-label="Slide 8"></button>
+          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="8" aria-label="Slide 9"></button>
+          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="9" aria-label="Slide 10"></button>
+          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="10" aria-label="Slide 11"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/imagenes/asset 1.png" class="d-block w-100 " alt="imagenUcompensar">
+          </div>
+          <div class="carousel-item">
+            <img src="/imagenes/asset 2.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/imagenes/asset 3.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/imagenes/asset 4.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/imagenes/asset 5.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/imagenes/asset 6.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/imagenes/asset 7.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/imagenes/asset 8.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/imagenes/asset 9.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/imagenes/asset 10.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/imagenes/asset 11.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+      </div>
+
+      <!--Noticias-->
+
+      <div class="ContainerNoticias">
+        <hr class="linea-naranja">
+        <h5 class="tituloNoticias">UCompensar en el entorno comunicativo</h5>
+        <div class="container-fluid my-5">
+          <div class="row d-flex flex-column flex-lg-row">
+            <!-- Carta grande -->
+            <div class="col-lg-6 mb-4 mb-lg-0">
+              <div class="card bg-dark text-white">
+                <img src="/imagenes/asset 58.jpeg" class="card-img" alt="...">
+                <div class="card-img-overlay d-flex flex-column justify-content-end">
+                  <span class="badge bg-danger">UCOMPENSAR EN LOS MEDIOS</span>
+                  <h5 class="card-title">
+                    <a href="#" class="text-white">Juegos Olímpicos de 2024: nuevas disciplinas...</a>
+                  </h5>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Contenedor de cartas pequeñas con scroll en pantallas pequeñas -->
+            <div class="col-lg-6">
+              <div class="scroll-container d-flex flex-row flex-nowrap flex-lg-wrap"> 
+                <!-- Tarjeta pequeña 1 -->
+                <div class="card small-card bg-dark text-white me-3 mb-3">
+                  <img src="/imagenes/asset 59.jpeg" class="card-img" alt="...">
+                  <div class="card-img-overlay d-flex flex-column justify-content-end">
+                    <span class="badge bg-danger">UCOMPENSAR EN LOS MEDIOS</span>
+                    <h5 class="card-title">
+                      <a href="#" class="text-white">El futuro de la logística en Colombia...</a>
+                    </h5>
+                  </div>
+                </div>
+      
+                <!-- Tarjeta pequeña 2 -->
+                <div class="card small-card bg-dark text-white me-3 mb-3">
+                  <img src="/imagenes/asset 60.jpeg" class="card-img" alt="...">
+                  <div class="card-img-overlay d-flex flex-column justify-content-end">
+                    <span class="badge bg-danger">UCOMPENSAR EN LOS MEDIOS</span>
+                    <h5 class="card-title">
+                      <a href="#" class="text-white">La Educación para el Trabajo y Desarrollo Humano...</a>
+                    </h5>
+                  </div>
+                </div>
+                <div class="card small-card bg-dark text-white me-3 mb-3">
+                  <img src="/imagenes/asset 60.jpeg" class="card-img" alt="...">
+                  <div class="card-img-overlay d-flex flex-column justify-content-end">
+                    <span class="badge bg-danger">UCOMPENSAR EN LOS MEDIOS</span>
+                    <h5 class="card-title">
+                      <a href="#" class="text-white">La Educación para el Trabajo y Desarrollo Humano...</a>
+                    </h5>
+                  </div>
+                </div>
+      
+                <!-- Tarjeta pequeña 3 -->
+                <div class="card small-card bg-dark text-white mb-3">
+                  <img src="/imagenes/asset 61.webp" class="card-img" alt="...">
+                  <div class="card-img-overlay d-flex flex-column justify-content-end">
+                    <span class="badge bg-danger">UCOMPENSAR EN LOS MEDIOS</span>
+                    <h5 class="card-title">
+                      <a href="#" class="text-white">Primer traje háptico en Colombia...</a>
+                    </h5>
+                  </div>
+                </div>
+                <div class="card small-card bg-dark text-white mb-3">
+                  <img src="/imagenes/asset 61.webp" class="card-img" alt="...">
+                  <div class="card-img-overlay d-flex flex-column justify-content-end">
+                    <span class="badge bg-danger">UCOMPENSAR EN LOS MEDIOS</span>
+                    <h5 class="card-title">
+                      <a href="#" class="text-white">Primer traje háptico en Colombia...</a>
+                    </h5>
+                  </div>
+                </div>
+                <div class="card small-card bg-dark text-white mb-3">
+                  <img src="/imagenes/asset 61.webp" class="card-img" alt="...">
+                  <div class="card-img-overlay d-flex flex-column justify-content-end">
+                    <span class="badge bg-danger">UCOMPENSAR EN LOS MEDIOS</span>
+                    <h5 class="card-title">
+                      <a href="#" class="text-white">Primer traje háptico en Colombia...</a>
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Razones de estudiar -->
+      <div class="container razones">
+        <h2>Conoce las razones para estudiar con nosotros</h2>
+            <div class="row">
+              <div class="col-12 col-md-4 p-5 align-content-center text-center">
+                <div class="row m-auto">
+                    <button type="button" class="btn btn-light m-auto" onclick="mostrarContenido('opcion1')">8.309 Estudiantes</button>
+                </div>
+                <br />
+                <div class="row m-auto">
+                    <button type="button" class="btn btn-light m-auto" onclick="mostrarContenido('opcion2')">20.000 Graduados</button>
+                </div>
+                <br />
+                <div class="row m-auto">
+                    <button type="button" class="btn btn-light m-auto" onclick="mostrarContenido('opcion3')">+1.000 Convenios</button>
+                </div>
+                <br>
+                <div class="row m-auto">
+                    <button type="button" class="btn btn-light m-auto" onclick="mostrarContenido('opcion4')">Becas y Descuentos</button>
+                </div>
+                <br>
+                <div class="row m-auto">
+                    <button type="button" class="btn btn-light m-auto" onclick="mostrarContenido('opcion5')">3 Facultades</button>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 p-5 align-content-center text-center">
+                <div id="opcion1" class="mt-5">
+                    <h3>8.309 Estudiantes</h3>
+                    <p>Contamos con una amplia oferta académica compuesta por programas presenciales para estudiantes de las sedes Bogotá y Villavicencio. Asimismo, Nuestra fortaleza en el entorno digital nos permite llevar una educación integral a jóvenes de todo el país.</p>
+                </div>
+                <div id="opcion2" class="mt-5" style="display: none;">
+                    <h3>20.000 Graduados</h3>
+                    <p>Contamos con una cifra del 86% de empleabilidad para nuestros egresados. Sabemos que las empresas buscan personas que siempre estén a la vanguardia, que sean efectivos y eficientes. De cada 10 estudiantes 8 consiguen empleo con mayor facilidad.</p>
+                </div>
+                <div id="opcion3" class="mt-5" style="display: none;">
+                    <h3>+1.000 Convenios</h3>
+                    <p>Nuestro modelo Universidad – Empresa facilita a los estudiantes desarrollar los conocimientos adecuados, para satisfacer las necesidades del sector productivo. Actualmente, mantenemos convenios con importantes organizaciones de sectores como: servicio, industrial, privado, público, así como pequeñas, medianas y grandes empresas.</p>
+                </div>
+                <div id="opcion4" class="mt-5" style="display: none;">
+                  <h3>Becas y Descuentos</h3>
+                  <p>
+                    Nuestra articulación con la Caja de Compensación Compensar hace posible extender beneficios a miles de jóvenes por medio de becas y descuentos especiales como: Beca Fundadores, que cubre el 100% de la matrícula; Beca por Excelencia Académica del 50%, Beca Compensar del 75% y estudiantes afiliados a Compensar del 10% de descuento.
+                  </p>
+                </div>
+                <div id="opcion5" class="mt-5" style="display: none;">
+                  <h3>3 Facultades</h3>
+                  <p>¡Haz parte de nuestra Educación Para Avanzar!​​
+                    <br>
+                    Estudia un programa con amplias oportunidades laborales en nuestras facultades de: Ingeniería, Escuela de Negocios y Ciencias Sociales y de la Educación.
+                  </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 align-content-center text-center">
+              <img id="imagen-principal" src="/imagenes/asset 13.png" alt="Acerca de" style="width: 250px; height: auto;" />
+            </div>
+        </div>
+      </div>
+      <br><br>
+      <div class="separator mx-auto"></div>
+
+      <!-- Comunidad -->
+      <div class="container">
+          <h2>Comunidad UCompensar</h2>
+          <div class="row p-3">
+              <div class="col-12 col-md-3">
+                  <div class="card comunity justify-content-center align-items-center p-4" style="width: 18rem;">
+                      <img src="/imagenes/icons8-noticias-100.png" class="card-img-top" alt="...">
+                      <div class="card-body text-center">
+                          <h5 class="card-title">Noticias UCompensar</h5>
+                          <p class="card-text">Mantente al día con las últimas novedades, logros y proyectos destacados de nuestra comunidad académica.</p>
+                          <a href="#" class="btn btn-primary">Ver más...</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-12 col-md-3">
+                  <div class="card comunity justify-content-center align-items-center p-4" style="width: 18rem;">
+                      <img src="/imagenes/icons8-spotify-100.png" class="card-img-top" alt="...">
+                      <div class="card-body align-content-center text-center">
+                          <h5 class="card-title">Spotify UCompensar</h5>
+                          <p class="card-text">Descubre playlists temáticas creadas para acompañarte en tu día a día académico y personal.</p>
+                          <a href="#" class="btn btn-primary">Ver más...</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-12 col-md-3">
+                  <div class="card comunity justify-content-center align-items-center p-4" style="width: 18rem;">
+                      <img src="/imagenes/icons8-bienestar-100.png" class="card-img-top" alt="...">
+                      <div class="card-body align-content-center text-center">
+                          <h5 class="card-title">Bienestar</h5>
+                          <p class="card-text">Programas y servicios orientados al bienestar físico, mental y emocional de nuestros estudiantes y colaboradores.</p>
+                          <a href="#" class="btn btn-primary">Ver más...</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-12 col-md-3">
+                  <div class="card comunity justify-content-center align-items-center p-4" style="width: 18rem;">
+                      <img src="/imagenes/icons8-avión-100.png" class="card-img-top" alt="...">
+                      <div class="card-body align-content-center text-center">
+                          <h5 class="card-title">Internacionalización</h5>
+                          <p class="card-text">Explora oportunidades de intercambio, convenios internacionales y experiencias globales para expandir tus horizontes.</p>
+                          <a href="#" class="btn btn-primary">Ver más...</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <br>
+          <div class="row p-3">
+              <div class="col-12 col-md-3">
+                  <div class="card comunity justify-content-center align-items-center p-4" style="width: 18rem;">
+                      <img src="/imagenes/icons8-realidad-virtual-100.png" class="card-img-top" alt="...">
+                      <div class="card-body align-content-center text-center">
+                          <h5 class="card-title">Recorrido Virtual</h5>
+                          <p class="card-text">Realiza una visita virtual por nuestras instalaciones y descubre los espacios que ofrece UCompensar.</p>
+                          <a href="#" class="btn btn-primary">Ver más...</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-12 col-md-3">
+                  <div class="card comunity justify-content-center align-items-center p-4" style="width: 18rem;">
+                      <img src="imagenes/icons8-grupo-de-compañías-100.png" class="card-img-top" alt="...">
+                      <div class="card-body align-content-center text-center">
+                          <h5 class="card-title">Emprendimiento</h5>
+                          <p class="card-text">Apoyamos a emprendedores con herramientas, asesorías y eventos para fomentar la creación de nuevas ideas y negocios.</p>
+                          <a href="#" class="btn btn-primary">Ver más...</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-12 col-md-3">
+                  <div class="card comunity justify-content-center align-items-center p-4" style="width: 18rem;">
+                      <img src="imagenes/icons8-prueba-100.png" class="card-img-top" alt="...">
+                      <div class="card-body align-content-center text-center">
+                          <h5 class="card-title">Test Vocacional</h5>
+                          <p class="card-text">Encuentra tu verdadera vocación con nuestro test especializado y empieza a construir tu futuro profesional.</p>
+                          <a href="#" class="btn btn-primary">Ver más...</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-12 col-md-3">
+                  <div class="card comunity justify-content-center align-items-center p-4" style="width: 18rem;">
+                      <img src="/imagenes/icons8-innovación-100.png" class="card-img-top" alt="...">
+                      <div class="card-body align-content-center text-center">
+                          <h5 class="card-title">Semana de la Innovación</h5>
+                          <p class="card-text">Únete a una semana llena de conferencias, talleres y actividades donde la creatividad y la tecnología se unen para inspirarte.</p>
+                          <a href="#" class="btn btn-primary">Ver más...</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <br><br><br>
+
+      <!-- Footer -->
+      <footer>
+        <div class="container-fluid p-3 pt-5" style="background-color: #4e5357;">
+            <div class="row mt-4 p-4">
+                <!-- Nueva sección a la izquierda -->
+                <div class="col-12 col-md-5 left-section">
+                    <img src="/imagenes/asset 19.png" alt="">
+                    <br><br><br>
+                    <p>Fundación Universitaria Compensar P.J. Resolución 23635 del 23 diciembre 1981 | 12455 del 9 de julio 2020. – VIGILADA MINEDUCACIÓN</p>
+                    <br>
+                    <br>
+                    <p>Para requerimientos de autoridades, tutelas o notificaciones judiciales por favor dirigirse al correo:</p>
+                    <br>
+                    <a href="mailto:notificacionesjudiciales@ucompensar.edu.co">notificacionesjudiciales@ucompensar.edu.co</a>
+                    <br><br>
+                    <div class="social-icons mt-3">
+                        <a href="#"><img src="/imagenes/asset 20.png" alt=""></a>
+                        <a href="#"><img src="/imagenes/asset 21.png" alt=""></a>
+                        <a href="#"><img src="/imagenes/asset 22.png" alt=""></a>
+                        <a href="#"><img src="/imagenes/asset 23.png" alt=""></a>
+                        <a href="#"><img src="/imagenes/asset 24.png" alt=""></a>
+                    </div>
+                </div>
     
-</body>
+                <!-- Sección original a la derecha -->
+                <div class="col-12 col-md-7 Sedes rounded-5">
+                    <div class="container p-5">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h2 class="title">SEDES</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h4>Bogotá</h4>
+                                <p>Sede principal</p>
+                                <p>Avenida (Calle) 32 No. 17 – 30</p>
+                                <p>Teléfono: 601 338 06 66</p>
+                            </div>
+                            <div class="col-md-6">
+                                <h4>Villavicencio</h4>
+                                <p>Sede Cofrem</p>
+                                <p>Carrera 35 No. 20A-02</p>
+                                <p>Via Catama (antes del Colegio Cofrem)</p>
+                                <p>Teléfono: 608 681 86 40</p>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h2 class="title">CERTIFICADOS</h2>
+                            </div>
+                        </div>
+                        <div class="row certificates text-center">
+                            <div class="col-md-4">
+                                <img src="/imagenes/asset 27.png" alt="Certificado Icontec NTC 6001" style="height: 250px;">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="/imagenes/asset 26.png" alt="Certificado Icontec NTC 5555" style="height: 250px;">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="/imagenes/asset 25.png" alt="Certificado ISO 9001" style="height: 250px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </footer>
+      <!--Bootstrap JS-->
+      <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="/script.js"></script>
+    </body>
 </html>
