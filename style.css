@@ -1,0 +1,289 @@
+/* Ajustar altura del navbar */
+.navbar-custom {
+    height: 86px;
+    padding-left: 15px; /* Reducir espacio a la izquierda del contenedor */
+}
+
+/* Logo responsivo */
+.logo-responsive {
+    max-width: 100%;
+    height: auto;
+    max-height: 79px;
+}
+
+/* Ajustar espacio del logo */
+.navbar-brand {
+    margin-right: 20px; /* Ajustar este valor para acercar el logo a los elementos del navbar */
+}
+
+/* En pantallas grandes */
+@media (min-width: 992px) {
+    .logo-responsive {
+        max-width: 336px;
+        height: auto;
+    }
+}
+
+/* En pantallas medianas */
+@media (max-width: 991px) and (min-width: 768px) {
+    .logo-responsive {
+        max-width: 268px;
+        height: auto;
+    }
+}
+
+/* En pantallas pequeñas */
+@media (max-width: 767px) {
+    .logo-responsive {
+        max-width: 200px;
+        height: auto;
+    }
+}
+
+/* En pantallas muy pequeñas */
+@media (max-width: 576px) {
+    .logo-responsive {
+        max-width: 150px;
+        height: auto;
+    }
+}
+
+/* Enlaces de la navbar en negrilla (bold) */
+.navbar-nav .nav-link {
+    font-weight: bold;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+/* Cambio a color naranja */
+.navbar-nav .nav-link:hover {
+    color: #FF6600;
+}
+
+/* Quitar la flecha del dropdown */
+.nav-item.dropdown .dropdown-toggle::after {
+    display: none;
+}
+
+/*Ocultar el submenu inicialmente*/
+.nav-item .dropdown-menu .NH {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 160;
+}
+
+/* Mostrar el menú del dropdown al pasar el mouse */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+
+.dropdown-item.dropdown:hover .dropdown-menu .NH{
+    display: block;
+    margin-top: 0;
+}
+
+/*Ajustar la alineacion*/
+.dropdown-item.dropdown {
+    position: relative;
+}
+
+.dropdown-item.dropdown:hover > .NH {
+    left: 1000px;
+    top: 0;
+    display: block;
+}
+
+/* Cambiar el color del texto cuando el dropdown está activo o abierto */
+.nav-item.dropdown.show > .nav-link,
+.nav-item.dropdown:focus > .nav-link,
+.nav-item.dropdown:active > .nav-link {
+    color: #FF6600; /* Naranja cuando el dropdown está abierto */
+}
+
+/* Transición suave para el menú */
+.dropdown-menu {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Alineación a la derecha del menú dropdown */
+.navbar-nav .dropdown-menu{
+    text-align: left;
+    margin-left: -60px; /* Ajustar este valor según el espaciado deseado */
+}
+
+.navbar-nav .dropdown-menu .NH{
+    text-align: left;
+    margin-left: 100px; /* Ajustar este valor según el espaciado deseado */
+}
+
+/* Cambiar color del menú desplegable en hover */
+.dropdown-menu .dropdown-item:hover {
+    background-color: orange;
+    color: white;
+}
+
+/* Alinear el navbar más cerca del logo */
+.navbar-collapse {
+    justify-content: start; /* Alinea los elementos al lado izquierdo */
+}
+
+/* Estilo botón de búsqueda */
+.btn-orange {
+    background-color: #FF6600;
+    color: #fff;
+    border: none;
+    width: 40px;
+    height: 40px;
+}
+
+.btn-orange:hover {
+    background-color: #e65a00;
+}
+
+.btn-orange i {
+    font-size: 18px;
+}
+
+/* Botón de búsqueda estilo pequeño en pantallas pequeñas */
+@media (max-width: 992px) {
+    .search-small {
+        background-color: transparent !important; /* Sin fondo */
+        color: #FF6600 !important; /* Icono de búsqueda naranja */
+        border: none;
+        margin-left: 0; /* Alinear a la izquierda */
+    }
+
+    /* Ajustar el margen del logo */
+    .navbar-brand {
+        margin-right: 0; /* Incrementar espacio entre logo y botones */
+    }
+
+    .navbar-toggler {
+        margin-left: -40% !important; /* Alinear a la izquierda el botón de collapse */
+    }
+}
+
+
+/* Estilos de los botones circulares */
+.carousel-indicators button {
+  width: 15px !important; /* Ajusta el ancho */
+  height: 15px !important; /* Ajusta la altura */
+  border-radius: 50%; /* Hacerlos circulares */
+  background-color: transparent; /* Fondo transparente inicialmente */
+  border: 2px solid white !important; /* Borde de color blanco */
+  transition: background-color 0.4s ease-in-out; /* Transición suave */
+  cursor: pointer; /* Cambiar el cursor al pasar el mouse */
+}
+
+/* Indicador activo (relleno cuando está seleccionado) */
+.carousel-indicators .active {
+  background-color: white; /* Fondo blanco cuando está activo */
+}
+
+/* Efecto hover con animación */
+.carousel-indicators button:hover {
+  background-color: white; /* Relleno blanco con transparencia al pasar el mouse */
+}
+
+/* Ubicación de los botones */
+.carousel-indicators {
+  position: absolute;
+  bottom: 20px; /* Ajusta según tu preferencia */
+  left: 35%; /* Centrarlos horizontalmente */
+  transform: translateX(-50%); /* Centrarlos horizontalmente */
+  display: flex;
+  justify-content: center; /* Alinear al centro */
+  gap: 5px; /* Espacio entre los botones */
+}
+
+.ContainerNoticias {
+  padding-top: 10px;
+  margin: 20px auto;
+  width: 90%;
+}
+.linea-naranja{
+  border: 0; /* Elimina cualquier borde predeterminado */
+  height: 1px; /* Altura de la línea */
+  width: 100%; /* Controla el ancho de la línea, ajusta según lo que necesites (ej: 80% o en píxeles como 700px) */
+  background-color: #FF6600; /* Color de la línea, en este caso, naranja */
+}
+
+.tituloNoticias{
+  font-size: 30px;
+}
+
+.card {
+  height: 100%; /* Asegura que todas las tarjetas llenen su columna */
+}
+
+.card h5 {
+  font-size: 15px; /* Ajusta el tamaño del título */
+  font-weight: bold;
+}
+
+.card-img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.card-img-overlay {
+  background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente sobre la imagen */
+}
+
+/* Estilo general para el contenedor con desplazamiento en pantallas pequeñas */
+.scroll-container {
+  display: flex;
+  overflow-x: auto; /* Permite el desplazamiento horizontal en pantallas pequeñas */
+  gap: 20px; /* Espacio entre las cartas */
+  padding-bottom: 10px;
+  scrollbar-width: thin; /* Hace más delgada la barra de desplazamiento (para Firefox) */
+}
+
+.scroll-container::-webkit-scrollbar {
+  height: 8px; /* Altura de la barra de desplazamiento (para Chrome, Safari) */
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background-color: #FF6600; /* Color de la barra de desplazamiento */
+  border-radius: 4px;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Color del fondo de la barra */
+}
+
+/* Estilo de las tarjetas pequeñas */
+.small-card {
+  flex: 0 0 30%; /* Ajusta el ancho de cada carta al 30% del contenedor */
+  height: 200px; /* Establece una altura fija */
+}
+
+/* Media query para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+  .scroll-container {
+    flex-direction: row; /* Mantiene la disposición en fila */
+    overflow-x: scroll; /* Se activa el scroll horizontal en pantallas pequeñas */
+    width: 100%;
+  }
+
+  .small-card {
+    flex: 0 0 auto; /* Permite que la tarjeta se ajuste automáticamente en el contenedor */
+    min-width: 200px; /* Ancho mínimo para las tarjetas pequeñas */
+  }
+}
+
+/* Media query para pantallas medianas y grandes (768px en adelante) */
+@media (min-width: 768px) {
+  .scroll-container {
+    flex-wrap: wrap; /* Las tarjetas se distribuirán en varias filas si es necesario */
+    overflow-x: hidden; /* Desactiva el scroll horizontal en pantallas grandes */
+    justify-content: flex-start; /* Alínea las tarjetas pequeñas a la izquierda */
+  }
+
+  /* Ajustes para las tarjetas pequeñas */
+  .small-card {
+    flex: 0 0 28%; /* Ajusta el ancho de cada carta al 30% del contenedor */
+  }
+}
