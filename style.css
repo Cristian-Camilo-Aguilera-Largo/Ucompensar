@@ -1,3 +1,15 @@
+*{
+  font-family: 'Roboto';
+}
+
+.separator {
+  width: 85%;
+  height: 5px;
+  background-color: #FF6600;
+  margin: 20px 0;
+}  
+
+
 /* Ajustar altura del navbar */
 .navbar-custom {
     height: 86px;
@@ -113,11 +125,6 @@
     margin-left: -60px; /* Ajustar este valor según el espaciado deseado */
 }
 
-.navbar-nav .dropdown-menu .NH{
-    text-align: left;
-    margin-left: 100px; /* Ajustar este valor según el espaciado deseado */
-}
-
 /* Cambiar color del menú desplegable en hover */
 .dropdown-menu .dropdown-item:hover {
     background-color: orange;
@@ -126,8 +133,49 @@
 
 /* Alinear el navbar más cerca del logo */
 .navbar-collapse {
-    justify-content: start; /* Alinea los elementos al lado izquierdo */
+  justify-content: start; /* Alinea los elementos al lado izquierdo */
 }
+
+/* Ajustar el menú colapsado para pantallas pequeñas */
+@media (max-width: 992px) {
+  .navbar-collapse {
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      background-color: rgba(255, 255, 255, 0.95); /* Fondo semitransparente */
+      z-index: 1050; /* Asegura que el menú esté sobre el contenido */
+      height: 100vh; /* Que cubra toda la altura de la pantalla */
+      overflow-y: auto; /* Permite desplazarse dentro del menú si es necesario */
+      transition: all 0.3s ease-in-out; /* Transición suave */
+      padding-left: 20px;
+    }
+
+  .navbar-close {
+      display: block;
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      font-size: 30px;
+      color: #000;
+      z-index: 1100;
+      cursor: pointer;
+  }
+
+  .navbar-nav .dropdown-menu{
+    text-align: left;
+    margin-left: 0px; /* Ajustar este valor según el espaciado deseado */
+}
+}
+
+/* Ocultar el botón de cierre en pantallas grandes */
+@media (min-width: 992px) {
+  .navbar-close {
+      display: none;
+  }
+}
+
+
 
 /* Estilo botón de búsqueda */
 .btn-orange {
@@ -286,4 +334,59 @@
   .small-card {
     flex: 0 0 28%; /* Ajusta el ancho de cada carta al 30% del contenedor */
   }
+}
+
+footer {
+  color: #FFFFFF;
+}
+
+footer a {
+  color: #FF6600;
+}
+
+.social-icons a img{
+  margin-right: 10px;
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+  width: 50px;
+  height: auto;
+}
+
+.Sedes {
+  background-color: #A0A0A0 ;
+}
+
+.Sedes h2{
+  color: #FF6600;
+}
+
+.razones button{
+  background-color: #446d89;
+  color: #FFFFFF;
+}
+
+.razones button:hover{
+  background-color: #2c90e8;
+  color: #FFFFFF;
+}
+
+.comunity {
+  min-height: 450px;
+  border: 2px solid #FF6600;
+}
+
+.comunity .btn {
+  background-color: #FF6600;
+  border-color: #FF6600;
+}
+
+.comunity .btn:hover {
+  background-color: #ff7f0a;
+  border-color: #ff7f0a;
+}
+
+.comunity img {
+  width: 150px;
+  height: auto;
 }
